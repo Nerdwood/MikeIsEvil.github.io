@@ -1,0 +1,84 @@
+@import 'partials/normalize';
+
+/***************************************
+ * Variables
+ ***************************************/
+
+$color-charcoal:    #293744;
+$color-blue:        #38C3FF;
+$color-orange:      #FF9742;
+$color-aqua:        #60F2ED;
+
+
+/***************************************
+ * Custom styling
+ ***************************************/
+
+html {
+    font-size: 62.5%;  /* 1rem ~= 10px */
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 2em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $color-charcoal;
+    color: $color-aqua;
+    text-align: center;
+
+    .site-wrapper {
+        max-width: 500px;
+        margin: 0 auto;
+
+        .site-header {
+            .site-title {
+                margin: 1em 0 0.5em;
+                font-size: 4em;
+                font-weight: 300;
+
+                .second-line {
+                    display: block;
+                    font-size: 1.5em;
+                    font-weight: normal;
+                    font-family: 'Germania One', cursive;
+                    letter-spacing: 0.02em;
+                    color: $color-orange;
+                }
+            }
+        }
+
+        .main-content {
+            padding: 0 1em;
+            color: $color-blue;
+        }
+
+        .site-footer {
+            padding: 1em;
+        }
+    }
+}
+
+em {
+    color: $color-aqua;
+    /*font-weight: bold;*/
+    font-style: normal;
+    font-family: 'Germania One', cursive;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 500px) {
+    body {
+        .site-wrapper {
+            .site-header {
+                .site-title {
+                    font-size: 5em;
+                }
+            }
+            .main-content {}
+            .site-footer {}
+        }
+    }
+}
